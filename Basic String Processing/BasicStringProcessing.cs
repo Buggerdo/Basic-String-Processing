@@ -6,7 +6,7 @@ namespace Basic_String_Processing
     internal class BasicStringProcessing
     {
         string input;
-        string[] stringArray;
+        List<string> stringArray;
 
         public BasicStringProcessing()
         {
@@ -27,7 +27,7 @@ namespace Basic_String_Processing
             Clear();
             Write("Enter a sentence: ");
             input = ReadLine();
-            stringArray = input.Split(" ");
+            stringArray = input.Split(" ").ToList();
         }
     }
 }
